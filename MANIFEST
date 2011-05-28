@@ -1,4 +1,5 @@
 Changes
+INSTALL
 LICENSE
 MANIFEST
 MANIFEST.SKIP
@@ -6,10 +7,11 @@ META.json
 META.yml
 Makefile.PL
 README
+SIGNATURE
 dist.ini
 lib/Dancer/Session/MongoDB.pm
 t/00-load.t
 t/01-basic.t
-t/manifest.t
+t/release-dist-manifest.t
 t/release-pod-coverage.t
 t/release-pod-syntax.t
