@@ -2,36 +2,39 @@
 use strict;
 use warnings;
 
-BEGIN { require 5.006; }
+use 5.006;
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'MongoDB session backend for Dancer.',
-  'AUTHOR' => 'Ido Perlmuter <ido@ido50.net>',
-  'BUILD_REQUIRES' => {
-    'Test::More' => '0'
+  "ABSTRACT" => "MongoDB session backend for Dancer.",
+  "AUTHOR" => "Ido Perlmuter <ido\@ido50.net>",
+  "BUILD_REQUIRES" => {
+    "Test::More" => 0
   },
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Dancer-Session-MongoDB',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Dancer::Session::MongoDB',
-  'PREREQ_PM' => {
-    'Carp' => '0',
-    'Dancer::Config' => '0',
-    'Dancer::ModuleLoader' => '0',
-    'Dancer::Session::Abstract' => '0',
-    'MongoDB' => '0',
-    'vars' => '0'
+  "DISTNAME" => "Dancer-Session-MongoDB",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Dancer::Session::MongoDB",
+  "PREREQ_PM" => {
+    "Carp" => 0,
+    "Dancer::Config" => 0,
+    "Dancer::ModuleLoader" => 0,
+    "Dancer::Session::Abstract" => 0,
+    "MongoDB" => 0,
+    "base" => 0,
+    "strict" => 0,
+    "vars" => 0,
+    "warnings" => 0
   },
-  'VERSION' => '0.2',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "0.3",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 

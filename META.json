@@ -4,7 +4,7 @@
       "Ido Perlmuter <ido@ido50.net>"
    ],
    "dynamic_config" : 0,
-   "generated_by" : "Dist::Zilla version 4.200004, CPAN::Meta::Converter version 2.110930",
+   "generated_by" : "Dist::Zilla version 4.300028, CPAN::Meta::Converter version 2.120921",
    "license" : [
       "perl_5"
    ],
@@ -16,35 +16,45 @@
    "prereqs" : {
       "configure" : {
          "requires" : {
-            "ExtUtils::MakeMaker" : "6.31"
+            "ExtUtils::MakeMaker" : "6.30"
+         }
+      },
+      "develop" : {
+         "requires" : {
+            "Pod::Coverage::TrustPod" : "0",
+            "Test::Pod" : "1.41",
+            "Test::Pod::Coverage" : "1.08"
          }
       },
       "runtime" : {
          "requires" : {
-            "Carp" : 0,
-            "Dancer::Config" : 0,
-            "Dancer::ModuleLoader" : 0,
-            "Dancer::Session::Abstract" : 0,
-            "MongoDB" : 0,
+            "Carp" : "0",
+            "Dancer::Config" : "0",
+            "Dancer::ModuleLoader" : "0",
+            "Dancer::Session::Abstract" : "0",
+            "MongoDB" : "0",
+            "base" : "0",
             "perl" : "5.006",
-            "vars" : 0
+            "strict" : "0",
+            "vars" : "0",
+            "warnings" : "0"
          }
       },
       "test" : {
          "requires" : {
-            "Test::More" : 0
+            "Test::More" : "0"
          }
       }
    },
    "release_status" : "stable",
    "resources" : {
-      "homepage" : "http://github.com/ido50/Dancer-Session-MongoDB/tree",
+      "homepage" : "https://github.com/ido50/Dancer-Session-MongoDB",
       "repository" : {
          "type" : "git",
-         "url" : "git://github.com/ido50/Dancer-Session-MongoDB.git",
-         "web" : "http://github.com/ido50/Dancer-Session-MongoDB/tree"
+         "url" : "https://github.com/ido50/Dancer-Session-MongoDB.git",
+         "web" : "https://github.com/ido50/Dancer-Session-MongoDB"
       }
    },
-   "version" : "0.2"
+   "version" : "0.3"
 }
 
